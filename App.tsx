@@ -5,19 +5,46 @@ import { StatusBar } from 'expo-status-bar';
 export default function App() {
   return (
     <ScrollView>
-    <Text>
-      ThreeNotes
-    </Text>
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
-      <StatusBar style="auto" />
+      <View style={styles.header}>
+        <Text style={styles.headerText}>  
+          ThreeNotes
+        </Text>
     </View>
     </ScrollView>
-    
+      
   );
 }
 
 const styles = StyleSheet.create({
+  header:{
+    backgroundColor:'black',
+    paddingVertical: 20,
+    paddingHorizontal: 16,
+    justifyContent:'center',
+
+  },
+  headerText:{
+    color:'white',
+    fontSize:24,
+    fontWeight:'bold',
+  },
+  searchContainer:{
+    backgroundColor:'black',
+    paddingVertical:15,
+    paddingHorizontal:16,
+  },
+  searchBar:{
+    backgroundColor: '#404040',
+    borderRadius:25,
+    paddingVertical:12,
+    paddingHorizontal:20,
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  searchPlaceholder:{
+    color:"#B0B0B0",
+    fontSize:16,
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
