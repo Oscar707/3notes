@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import MyText from './MyText';
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
@@ -9,6 +10,8 @@ export default function App() {
         <Text style={styles.headerText}>  
           ThreeNotes
         </Text>
+        <MyText style={{color:'blue'}}>This text will be right-aligned</MyText>
+        <MyText style={{color:'blue'}}>This text will be right-aligned,This text will be right-aligned,This text will be right-aligned,This text will be right-aligned</MyText>
     </View>
     </ScrollView>
       
