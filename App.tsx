@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import MyText from './MyText';
+import Task from './Task';
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
@@ -13,6 +14,10 @@ export default function App() {
         <MyText style={{color:'blue'}}>This text will be right-aligned</MyText>
         <MyText style={{color:'blue'}}>This text will be right-aligned,This text will be right-aligned,This text will be right-aligned,This text will be right-aligned</MyText>
     </View>
+    <Task 
+      text="Complete the project" 
+      onDelete={() => console.log('Task deleted')} 
+    />
     </ScrollView>
       
   );
