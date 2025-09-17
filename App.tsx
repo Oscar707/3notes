@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import MyText from './MyText';
 import Task from './Task';
+import SumTable from './SumTable';
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       text="Complete the project" 
       onDelete={() => console.log('Task deleted')} 
     />
+    <SumTable initialRows={1} initialCols={1} />
     </ScrollView>
       
   );
