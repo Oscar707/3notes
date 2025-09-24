@@ -20,5 +20,12 @@ export default class MyText extends React.Component<MyTextProps> {
 const styles = StyleSheet.create({
   defaultStyle: {
     textAlign: 'right',
+    color: '#FFF8F8',
+    backgroundColor: '#9985E2',
+    borderRadius: 12,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    alignSelf: 'flex-end',
+    maxWidth: '85%',
   },
 });

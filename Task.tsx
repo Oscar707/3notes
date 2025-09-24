@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
-    backgroundColor: 'white',
+    backgroundColor: '#2E2B2B',
     borderBottomWidth: 1,
     borderBottomColor: '#e0e0e0',
   },
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'right',
     fontSize: 16,
-    color: '#333',
+    color: '#FFFFFF',
     marginRight: 12,
   },
   checkedText: {
